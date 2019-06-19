@@ -1,0 +1,26 @@
+{
+  "name": "jump",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js",
+    "test:watch": "onchange \"./*.js\" -- npm test",
+
+    "test:style": "mocha calculateStylePoints.test.js",
+    "test:style:watch": "onchange \"calculateStylePoints*.js\" -- npm run test:style",
+
+    "test:distance": "mocha calculateDistancePoints.test.js",
+    "test:distance:watch": "onchange \"calculateDistancePoints*.js\" -- npm run test:distance",
+
+    "test:total": "mocha jump.test.js",
+    "test:total:watch": "onchange \"jump*.js\" -- npm run test:total"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "onchange": "^6.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+module.exports = precise = (value) => parseFloat(value).toPrecision(4);
